@@ -1,0 +1,243 @@
+[0m14:00:31.859114 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa77885970>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa78963c20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa77206570>]}
+
+
+============================== 14:00:31.954790 | 2fbc76c1-5e4b-4106-a925-c4879e3f9a10 ==============================
+[0m14:00:31.954790 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:00:31.956771 [debug] [MainThread]: running dbt with arguments {'no_print': 'None', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'invocation_command': 'dbt init', 'partial_parse': 'True', 'indirect_selection': 'eager', 'version_check': 'True', 'empty': 'None', 'static_parser': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'profiles_dir': '/home/sed/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'warn_error': 'None', 'target_path': 'None', 'log_path': 'logs', 'write_json': 'True', 'log_format': 'default', 'introspect': 'True', 'debug': 'False', 'maximum_seed_size_mib': '1', 'use_colors': 'True', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'hints_enabled': 'True'}
+[0m14:00:56.375123 [debug] [MainThread]: Starter project path: /home/sed/ukim/dataengbootcamp/project/.venv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:00:56.399575 [info ] [MainThread]: Setting up your profile.
+[0m14:01:00.577293 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m14:01:00.578450 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:01:00.579673 [info ] [MainThread]: python version: 3.12.13
+[0m14:01:00.583074 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:01:00.584555 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:01:00.591551 [info ] [MainThread]: Debug validation encountered an error
+[0m14:01:00.592406 [info ] [MainThread]: Your new dbt project "movies_db" was created!
+Initialized new project in /home/sed/ukim/dataengbootcamp/project/movies_db/movies_db
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:01:00.593194 [info ] [MainThread]: [31mYour profile may need adjustments. You can find the logs of `dbt debug` above[0m
+[0m14:01:00.595035 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 28.866795, "process_in_blocks": "0", "process_kernel_time": 0.606898, "process_mem_max_rss": "158540", "process_out_blocks": "0", "process_user_time": 5.108396}
+[0m14:01:00.596369 [debug] [MainThread]: Command `dbt init` succeeded at 14:01:00.596197 after 28.87 seconds
+[0m14:01:00.596957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa771d6fc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa771abf80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x70aa771a9610>]}
+[0m14:01:00.597648 [debug] [MainThread]: Flushing usage events
+[0m14:01:01.680129 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:15:47.440260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c24225a60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c2459d4c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c242254f0>]}
+
+
+============================== 14:15:47.445214 | e2c0eb13-c862-4c74-978f-f61362bb5c1a ==============================
+[0m14:15:47.445214 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:15:47.446298 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'cache_selected_only': 'False', 'empty': 'None', 'invocation_command': 'dbt debug', 'maximum_seed_size_mib': '1', 'profiles_dir': '/home/sed/.dbt', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'target_path': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'introspect': 'True', 'no_print': 'None', 'log_path': 'logs', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'indirect_selection': 'eager', 'log_format': 'default', 'warn_error': 'None', 'hints_enabled': 'True', 'quiet': 'False', 'partial_parse': 'True'}
+[0m14:15:47.464017 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:15:47.464879 [info ] [MainThread]: python version: 3.12.13
+[0m14:15:47.465974 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:15:47.467138 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:15:47.468683 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 43
+  ------------------------------
+  40 |        dev:
+  41 |          type: duckdb
+  42 |          path: movies_project.duckdb
+  43 | 	 schema: dev
+  44 |          threads: 1
+  45 | 	 extensions: 
+  46 | 	   - parquet
+  
+  Raw Error:
+  ------------------------------
+  while scanning a plain scalar
+    in "<unicode string>", line 42, column 16
+  found a tab character that violates indentation
+    in "<unicode string>", line 43, column 1
+[0m14:15:47.469966 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.0363009, "process_in_blocks": "0", "process_kernel_time": 0.492376, "process_mem_max_rss": "122140", "process_out_blocks": "0", "process_user_time": 3.782893}
+[0m14:15:47.470682 [debug] [MainThread]: Command `dbt debug` failed at 14:15:47.470508 after 0.04 seconds
+[0m14:15:47.471266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c2915b500>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c2407bce0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x797c240a24b0>]}
+[0m14:15:47.471915 [debug] [MainThread]: Flushing usage events
+[0m14:15:48.520456 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:20:49.012407 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed429460>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed4296a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed429400>]}
+
+
+============================== 14:20:49.024492 | a61e6c3c-709f-4269-b6ad-494d5aca2c00 ==============================
+[0m14:20:49.024492 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:20:49.025638 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'send_anonymous_usage_stats': 'True', 'printer_width': '80', 'profiles_dir': '/home/sed/.dbt', 'no_print': 'None', 'empty': 'None', 'maximum_seed_size_mib': '1', 'use_colors': 'True', 'hints_enabled': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'quiet': 'False', 'cache_selected_only': 'False', 'log_path': 'logs', 'static_parser': 'True', 'target_path': 'None', 'partial_parse': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'introspect': 'True', 'version_check': 'True', 'invocation_command': 'dbt debug', 'warn_error': 'None', 'write_json': 'True'}
+[0m14:20:49.044359 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:20:49.046003 [info ] [MainThread]: python version: 3.12.13
+[0m14:20:49.046960 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:20:49.048371 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:20:49.049783 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 43
+  ------------------------------
+  40 |        dev:
+  41 |          type: duckdb
+  42 |          path: movies_project.duckdb
+  43 | 	 schema: dev
+  44 |          threads: 1
+  45 | 	 extensions: 
+  46 | 	   - parquet
+  
+  Raw Error:
+  ------------------------------
+  while scanning a plain scalar
+    in "<unicode string>", line 42, column 16
+  found a tab character that violates indentation
+    in "<unicode string>", line 43, column 1
+[0m14:20:49.051115 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.04512262, "process_in_blocks": "0", "process_kernel_time": 0.352064, "process_mem_max_rss": "121928", "process_out_blocks": "0", "process_user_time": 3.704679}
+[0m14:20:49.052109 [debug] [MainThread]: Command `dbt debug` failed at 14:20:49.051937 after 0.05 seconds
+[0m14:20:49.052608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed42b950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed264170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7bf0ed592870>]}
+[0m14:20:49.053260 [debug] [MainThread]: Flushing usage events
+[0m14:20:50.237895 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:22:37.721423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b811a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b811dc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b811b20>]}
+
+
+============================== 14:22:37.745549 | d78bdec7-775b-4295-89e4-fbb308f9ce1d ==============================
+[0m14:22:37.745549 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:22:37.756224 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'quiet': 'False', 'log_path': 'logs', 'introspect': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'cache_selected_only': 'False', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'profiles_dir': '/home/sed/.dbt', 'warn_error': 'None', 'printer_width': '80', 'target_path': 'None', 'empty': 'None', 'write_json': 'True', 'version_check': 'True', 'fail_fast': 'False', 'partial_parse': 'True', 'use_colors': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:22:37.801993 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:22:37.803078 [info ] [MainThread]: python version: 3.12.13
+[0m14:22:37.804172 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:22:37.805125 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:22:37.807085 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 43
+  ------------------------------
+  40 |        dev:
+  41 |          type: duckdb
+  42 |          path: movies_project.duckdb
+  43 | 	 schema: dev
+  44 |          threads: 1
+  45 | 	 extensions: 
+  46 | 	   - parquet
+  
+  Raw Error:
+  ------------------------------
+  while scanning a plain scalar
+    in "<unicode string>", line 42, column 16
+  found a tab character that violates indentation
+    in "<unicode string>", line 43, column 1
+[0m14:22:37.810732 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.10385431, "process_in_blocks": "0", "process_kernel_time": 3.304343, "process_mem_max_rss": "122028", "process_out_blocks": "0", "process_user_time": 9.07643}
+[0m14:22:37.813724 [debug] [MainThread]: Command `dbt debug` failed at 14:22:37.813332 after 0.11 seconds
+[0m14:22:37.814887 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b813f20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b8114f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7dcb6b68f7d0>]}
+[0m14:22:37.817533 [debug] [MainThread]: Flushing usage events
+[0m14:22:40.069708 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:23:35.535284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bf9238bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bf933db20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bf9238e90>]}
+
+
+============================== 14:23:35.545034 | f30c5f03-89df-4f48-b7fb-356f6e6b0fac ==============================
+[0m14:23:35.545034 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:23:35.546485 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'warn_error': 'None', 'hints_enabled': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'static_parser': 'True', 'debug': 'False', 'profiles_dir': '/home/sed/.dbt', 'target_path': 'None', 'log_format': 'default', 'empty': 'None', 'introspect': 'True', 'log_cache_events': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'indirect_selection': 'eager', 'quiet': 'False', 'write_json': 'True', 'version_check': 'True', 'maximum_seed_size_mib': '1', 'invocation_command': 'dbt debug', 'log_path': 'logs', 'printer_width': '80', 'no_print': 'None'}
+[0m14:23:35.569400 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:23:35.570256 [info ] [MainThread]: python version: 3.12.13
+[0m14:23:35.571146 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:23:35.572716 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:23:35.574391 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 43
+  ------------------------------
+  40 |        dev:
+  41 |          type: duckdb
+  42 |          path: movies_project.duckdb
+  43 | 	 schema: dev
+  44 |          threads: 1
+  45 | 	 extensions: 
+  46 | 	   - parquet
+  
+  Raw Error:
+  ------------------------------
+  while scanning a plain scalar
+    in "<unicode string>", line 42, column 16
+  found a tab character that violates indentation
+    in "<unicode string>", line 43, column 1
+[0m14:23:35.576441 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.049474705, "process_in_blocks": "0", "process_kernel_time": 0.78686, "process_mem_max_rss": "122104", "process_out_blocks": "0", "process_user_time": 5.299266}
+[0m14:23:35.577488 [debug] [MainThread]: Command `dbt debug` failed at 14:23:35.577108 after 0.05 seconds
+[0m14:23:35.578189 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bfe1af4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bf92ab6e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x788bf9238ce0>]}
+[0m14:23:35.579455 [debug] [MainThread]: Flushing usage events
+[0m14:23:37.728168 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:28:21.176771 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6922629b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6922629d30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6922629a60>]}
+
+
+============================== 14:28:21.187668 | d2426a0f-1b82-4834-8bdb-365cdab098e9 ==============================
+[0m14:28:21.187668 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:28:21.190431 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'empty': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'version_check': 'True', 'log_cache_events': 'False', 'indirect_selection': 'eager', 'introspect': 'True', 'log_path': 'logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'hints_enabled': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/sed/.dbt', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'partial_parse': 'True', 'warn_error': 'None', 'write_json': 'True'}
+[0m14:28:21.218410 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:28:21.219383 [info ] [MainThread]: python version: 3.12.13
+[0m14:28:21.220330 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:28:21.221610 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:28:21.224010 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Runtime Error
+  Syntax error near line 43
+  ------------------------------
+  40 |        dev:
+  41 |          type: duckdb
+  42 |          path: movies_project.duckdb
+  43 | 	 schema: dev
+  44 |          threads: 1
+  45 | 	 extensions: 
+  46 | 	   - parquet
+  
+  Raw Error:
+  ------------------------------
+  while scanning a plain scalar
+    in "<unicode string>", line 42, column 16
+  found a tab character that violates indentation
+    in "<unicode string>", line 43, column 1
+[0m14:28:21.226287 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.059702095, "process_in_blocks": "0", "process_kernel_time": 0.513834, "process_mem_max_rss": "122248", "process_out_blocks": "0", "process_user_time": 3.843479}
+[0m14:28:21.227572 [debug] [MainThread]: Command `dbt debug` failed at 14:28:21.227367 after 0.06 seconds
+[0m14:28:21.228321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e69276e74d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6922480590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e6922468860>]}
+[0m14:28:21.229080 [debug] [MainThread]: Flushing usage events
+[0m14:28:22.396373 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:28:45.747848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f3323c260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f34ce15e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f34900980>]}
+
+
+============================== 14:28:45.751745 | a2694624-7768-40a5-9129-e3bdf4230e7c ==============================
+[0m14:28:45.751745 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:28:45.753021 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'printer_width': '80', 'send_anonymous_usage_stats': 'True', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'no_print': 'None', 'indirect_selection': 'eager', 'empty': 'None', 'warn_error': 'None', 'quiet': 'False', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'write_json': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'debug': 'False', 'target_path': 'None', 'hints_enabled': 'True', 'log_path': 'logs', 'profiles_dir': '/home/sed/.dbt', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])'}
+[0m14:28:45.767462 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:28:45.768763 [info ] [MainThread]: python version: 3.12.13
+[0m14:28:45.769730 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:28:45.770832 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:28:46.520772 [info ] [MainThread]: Using profiles dir at /home/sed/.dbt
+[0m14:28:46.521564 [info ] [MainThread]: Using profiles.yml file at /home/sed/.dbt/profiles.yml
+[0m14:28:46.522602 [info ] [MainThread]: Using dbt_project.yml file at /home/sed/ukim/dataengbootcamp/project/dbt_project.yml
+[0m14:28:46.523879 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:28:46.526343 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.88505584, "process_in_blocks": "0", "process_kernel_time": 0.487788, "process_mem_max_rss": "156024", "process_out_blocks": "0", "process_user_time": 4.373972}
+[0m14:28:46.527502 [debug] [MainThread]: Command `dbt debug` failed at 14:28:46.527301 after 0.89 seconds
+[0m14:28:46.528130 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f34463140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f33ade870>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x787f332043e0>]}
+[0m14:28:46.528742 [debug] [MainThread]: Flushing usage events
+[0m14:28:47.841812 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:29:44.571478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95b0f48920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95af6b0bc0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95b01f4950>]}
+
+
+============================== 14:29:44.576325 | df02562d-364a-4ce8-a6ed-382f60a65edd ==============================
+[0m14:29:44.576325 [info ] [MainThread]: Running with dbt=1.12.5
+[0m14:29:44.577732 [debug] [MainThread]: running dbt with arguments {'profiles_dir': '/home/sed/.dbt', 'write_json': 'True', 'debug': 'False', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'log_format': 'default', 'printer_width': '80', 'use_experimental_parser': 'False', 'target_path': 'None', 'fail_fast': 'False', 'no_print': 'None', 'log_path': 'logs', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'empty': 'None', 'maximum_seed_size_mib': '1', 'version_check': 'True', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'hints_enabled': 'True', 'use_colors': 'True', 'warn_error': 'None', 'partial_parse': 'True', 'quiet': 'False', 'log_cache_events': 'False'}
+[0m14:29:44.592906 [info ] [MainThread]: dbt version: 1.12.5
+[0m14:29:44.593699 [info ] [MainThread]: python version: 3.12.13
+[0m14:29:44.595006 [info ] [MainThread]: python path: /home/sed/ukim/dataengbootcamp/project/.venv/bin/python3
+[0m14:29:44.596244 [info ] [MainThread]: os info: Linux-6.18.40.1-microsoft-standard-WSL2-x86_64-with-glibc2.43
+[0m14:29:44.941084 [info ] [MainThread]: Using profiles dir at /home/sed/.dbt
+[0m14:29:44.942555 [info ] [MainThread]: Using profiles.yml file at /home/sed/.dbt/profiles.yml
+[0m14:29:44.944288 [info ] [MainThread]: Using dbt_project.yml file at /home/sed/ukim/dataengbootcamp/project/dbt_project.yml
+[0m14:29:44.945683 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m14:29:44.948124 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.48142117, "process_in_blocks": "0", "process_kernel_time": 0.391481, "process_mem_max_rss": "156136", "process_out_blocks": "0", "process_user_time": 4.182461}
+[0m14:29:44.949309 [debug] [MainThread]: Command `dbt debug` failed at 14:29:44.949104 after 0.48 seconds
+[0m14:29:44.950085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95b01bd010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95af3a3e00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d95af4d50d0>]}
+[0m14:29:44.950911 [debug] [MainThread]: Flushing usage events
+[0m14:29:46.184281 [debug] [MainThread]: An error was encountered while trying to flush usage events

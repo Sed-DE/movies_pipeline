@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: source_data
+    description: "Data sources for movies database"
+    database: movies_project
+    schema: prod
+    tables:
+      - name: title_basics
+      - name: title_ratings
+      - name: tmdb_ids
+      - name: tmdb_movie_details
+    

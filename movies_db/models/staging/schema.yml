@@ -1,0 +1,73 @@
+version: 2
+
+models:
+  - name: stg_title_basics
+    description: IMDb title basics, one row per title
+    columns:
+      - name: title_id
+        description: Primary key, IMDb title ID (renamed from tconst)
+        data_tests:
+          - unique
+          - not_null
+      - name: title_type
+        description: Type of title (movie, short, tvEpisode, etc.)
+      - name: primary_title
+        description: Title the movie is released under
+      - name: original_title
+        description: Title in the original language
+      - name: is_adult_title
+        description: Flag for adult content
+      - name: year_of_release
+        description: Year the title was released
+      - name: end_year
+        description: End year, only relevant for TV series
+      - name: runtime_in_minutes
+        description: Runtime in minutes, cast to integer
+      - name: genres
+        description: Comma-separated list of genres
+
+  - name: stg_title_ratings
+    description: Cleaned IMDb ratings(ratings where numVotes >= 5000), one row per title
+    columns:
+      - name: title_id
+        description: Primary key, IMDb title ID
+        data_tests:
+          - unique
+          - not_null
+      - name: avg_rating
+        description: Average IMDb rating
+      - name: num_of_votes
+        description: Number of votes behind the rating, cast to integer
+
+  - name: stg_tmdb_ids
+    description: Bridge between IMDb IDs and TMDB IDs
+    columns:
+      - name: imdb_id
+        description: IMDb title ID, matches title_id in the IMDb models
+        data_tests:
+          - not_null
+      - name: tmdb_id
+        description: TMDB movie ID
+        data_tests:
+          - not_null
+
+  - name: stg_tmdb_movie_details
+    description: Cleaned TMDB movie details, one row per movie
+    columns:
+      - name: tmdb_id
+        description: Primary key, TMDB movie ID
+        data_tests:
+          - unique
+          - not_null
+      - name: budget
+        description: Production budget (0 or null meaning unknown)
+      - name: overview
+        description: Plot summary
+      - name: movie_poster
+        description: URL of the movie poster (renamed from image_link)
+      - name: revenue
+        description: Box office revenue (0 or null meaning unknown)
+      - name: original_title
+        description: Title in the original language
+      - name: runtime_in_minutes
+        description: Runtime in minutes

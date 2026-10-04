@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+#Data directory
+data/
+parquet_data/
+my_download.py
+.ipynb_checkpoints
+ingest_logic.ipynb
+thread_practice.py
+api.txt
+output.txt
+test.py
+test2.py
+
+#jsonl
+tmdb_progress.jsonl
+tmdb_details.jsonl

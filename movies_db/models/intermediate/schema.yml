@@ -1,0 +1,17 @@
+
+version: 2
+
+models:
+  - name: ini_movie_facts
+    description: One row per movie, with budget, revenue, runtime, number of votes
+    columns:
+      - name: tmdb_id
+        description: Primary key, TMDB's ID for the movie
+        data_tests:
+          - unique
+          - not_null
+      - name: title_id
+        description: Primary key, IMDB's ID for the movie
+        data_tests:
+          - unique
+          - not_null

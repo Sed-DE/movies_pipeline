@@ -1,0 +1,87 @@
+version: 2
+
+models:
+  - name: fcts_movies
+    description: One row per movie, with budget, revenue, runtime, ratings and votes
+    config:
+      contract:
+        enforced: true
+    columns:
+      - name: tmdb_id
+        description: Primary key, TMDB's ID for the movie
+        data_type: int
+        data_tests:
+          - unique
+          - not_null
+          - relationship:
+              arguments:
+                to: ref('dim_movie_images')
+                field: tmdb_id
+              config:
+                severity: warn
+      - name: title_id
+        description: IMDb title ID, links to dim_movie_details
+        data_type: varchar
+        data_tests:
+          - unique
+          - not_null
+          - relationships:
+              arguments:
+                to: ref('dim_movie_details')
+                field: title_id
+      - name: budget
+        description: Production budget (0 or null means unknown)
+        data_type: int
+      - name: revenue
+        description: Box office revenue (0 or null means unknown)
+        data_type: int
+      - name: runtime_in_minutes
+        description: Movie length in minutes
+        data_type: int
+      - name: avg_rating
+        description: Average IMDb rating
+        data_type: double
+      - name: num_of_votes
+        description: Number of IMDb votes behind the rating (>=5000)
+        data_type: int
+
+  - name: dim_movie_details
+    description: Descriptive attributes for each movie
+    columns:
+      - name: title_id
+        description: Primary key, IMDb title ID
+        data-type: varchar
+        data_tests:
+          - unique
+          - not_null
+      - name: primary_title
+        description: Title the movie is released under
+        data_type: varchar
+      - name: original_title
+        description: Title in the original language
+        data_type: varchar
+      - name: overview
+        description: Plot summary
+        data_type: varchar
+      - name: is_adult_title
+        description: Flag for adult content
+        data_type: varchar
+      - name: year_of_release
+        description: Year the movie was released
+        data_type: bigint
+      - name: genres
+        description: Comma-separated list of genres
+        data_type: varchar
+
+  - name: dim_movie_images
+    description: Image links for each movie
+    columns:
+      - name: tmdb_id
+        description: Primary key, TMDB's ID for the movie
+        data_type: int
+        data_tests:
+          - unique
+          - not_null
+      - name: movie_poster
+        description: URL of the movie poster
+        data_type: varchar

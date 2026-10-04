@@ -1,0 +1,8 @@
+
+target/
+dbt_packages/
+logs/
+.env
+dbt_internal_packages/
+models/marts/wide_table.sql
+movies_project.duckdb
