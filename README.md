@@ -82,7 +82,7 @@ Enriched TMDB data is joined back to the IMDb tables on `imdb_id` for querying.
 | 2 | `imdb_ingest_data.py` | Converts the files to parquet and loads each one into DuckDB as a table in the `prod` schema |
 | 3 | `tmdb_get_id.py` | Looks up the TMDB ID for each IMDb ID in `title_ratings` with (`numVotes => 5000`) via the TMDB `/find` endpoint (retries on failure and rate limits) |
 | 4 | `tmdb_load_id.py` | Loads the IMDb → TMDB ID mapping into `prod.tmdb_ids` |
-| 5 | `tmdb_get_details.py` | Fetches movie details for each TMDB ID using threads via the [tmdbsimple](https://github.com/celiao/tmdbsimple). Writes to `tmdb_details.jsonl` as it goes, so it can resume after a crash. |
+| 5 | `tmdb_get_details.py` | Fetches movie details for each TMDB ID using threads via the [tmdbsimple](https://github.com/celiao/tmdbsimple) wrapper. Writes to `tmdb_details.jsonl` as it goes, so it can resume after a crash. |
 | 6 | `tmdb_load_details.py` | Loads the jsonl into `prod.tmdb_movie_details` and builds the full poster URL |
 
 Output database: `movies_project.duckdb`.
